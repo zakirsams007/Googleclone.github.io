@@ -1,0 +1,363 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    /* border: 2px solid blue; */
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*---------------- HEADER--------------- */
+
+header{
+    /* border: 1px solid black; */
+    height: 50px;
+}
+.navbar{
+    height: 100%;
+    width: 100%;
+   
+}
+
+.navbar ul{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 20px;
+}
+
+.navbar ul li {
+    margin-left: 18px;
+}
+
+.navbar ul li a {
+    color: black;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+/*------------- CIRCLE SHADOW EFFECT------------ */
+
+.circle-shadow{
+    
+    height: 35px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle-shadow:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+ 
+.menu-icon, .user-icon span{
+    font-size: 18px;
+}
+
+.user-icon{
+    background-color: rgb(11, 197, 221);
+    height: 25px;
+    width: 25px;
+    border-radius: 55%;
+    text-align: center;
+    line-height: 25px;
+}
+
+.user-icon span{
+    color: white;
+}
+
+/*----------------------- MAIN CONTENT------------ */
+
+.main-content{
+    /* border: 1px solid black; */
+    flex-grow: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.wrapper{
+
+    /* border: 1px solid rgb(241, 14, 14); */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 120px;
+    margin-bottom: 150px;
+   
+}
+.logo{
+    width: 300px;
+    margin-bottom: 17px;
+}
+
+.search-bar{
+    border: 1px solid lightgray;
+    width: 700px;
+    height: 50px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.search-bar input:focus{
+    outline: none;
+}
+
+.search-bar:hover{
+    box-shadow: 0px 0px 5px 0px #b5b5b5;
+}
+.search-bar i{
+    font-size: 22px;
+    color: gray;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.search-bar input{
+    flex-grow: 1;
+    height: 33px;
+    margin-right: 12px;
+    border: none;
+}
+ .search-btn{
+     margin-top: 20px;
+     /* border: 1px solid red; */
+ }
+
+ .search-btn button{
+     height: 45px;
+     font-size: 17px;
+     border: none;
+     border-radius: 6px;
+     margin-left: 12px;
+     color: black;
+     background-color: f#f2f3f4;
+ }
+
+ .search-btn button:hover{
+     border: 1px solid lightgray;
+     cursor: pointer;
+ }
+
+ .google-search-btn{
+     width: 160px;
+   
+ }
+
+ .lucky-btn{
+    width: 160px;
+}
+
+.short-vdeos{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    font-size: 16px;
+}
+
+.short-vdeos p a:hover{
+    text-decoration: underline;
+}
+.language p a:hover{
+    text-decoration: underline;
+}
+
+.language p a{
+   color: blue;
+}
+.language p a:hover{
+    text-decoration: underline;
+}
+
+/* --------------FOOTER------------- */
+
+.foooter-div{
+    height: 150px;
+    /* border: 2px solid red; */
+}
+
+#footer{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  
+}
+
+.upper-footer{
+    background-color: #f2f2f2;
+    height: 50%;
+    border-bottom: 1px solid lightgray;
+}
+
+.upper-footer p{
+    color: gray;
+    font-size: 20px;
+    margin-left: 34px;
+}
+
+.lower-footer{
+    background-color: #f2f2f2;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+}
+.lower-footer ul li a{
+    font-size: 22px;
+    color: gray;
+    
+}
+
+.lower-footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.lower-left-footer {
+    display: flex;
+}
+
+.lower-left-footer li {
+    margin-left: 16px;
+    /* border: 2px solid red; */
+    padding-left: 12px;
+   
+}
+
+
+.lower-right-footer {
+    display: flex;
+}
+
+.lower-right-footer li {
+    margin-left: 9px;
+}
+
+#lower-footer ul li  a:hover{
+    text-decoration: underline;
+} 
+
+/* Mobile and Tablet */
+@media only screen and (max-width: 768px) {
+    /* Navbar */
+    .navbar ul {
+        font-size: 17px;
+    }
+    .menu-icon, .user-icon span{
+        font-size: 15px;
+    }
+    .circle-shadow{
+        height:30px ;
+        width: 30px;
+        /* border: 2px solid red; */
+    }
+
+   /* ------- logo --------- */
+
+   .logo{
+       width: 150px;
+   }
+
+   /* ------search bar------- */
+
+   search-bar{
+       width: 90%;
+       height: 30px;
+   }
+   .search-bar i{
+       font-size: 14px;
+   }
+   /* --------buttons------- */
+   .search-btn button{
+       height: 25px;
+       font-size: 12px;
+   }
+   .google-search-btn{
+    width: 120px;
+   }
+   .lucky-btn{
+       width: 120px;
+   }
+   .short-vdeos{
+       font-size: 12px;
+   }
+    
+   .language{
+       font-size: 12px;
+   }
+
+
+   /* ---wraper----- */
+
+   .wrapper{
+       /* border:2px solid red; */
+     margin-bottom: 20px;
+      
+   }
+
+   /* -----footer----- */
+
+     footer{
+         height: 150px;
+     }
+     .upper-footer{
+         height: 50px;
+     }
+     .lower-footer{
+         height: 100px;
+         flex-direction: column;
+     }
+     .lower-left-footer{
+         flex-wrap: wrap;
+         /* border: 2px solid red; */
+     }
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
